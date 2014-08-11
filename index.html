@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+	<head>
+		<title>DISC test</title>
+		<meta charset = 'utf-8' /> 
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="css/kickstart.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/kickstart-buttons.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/kickstart-grid.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/myscripts.js"></script>
+		<script type="text/javascript" src="js/kickstart.js"></script>
+		<script type="text/javascript" src="js/charts.js"></script>		
+	</head>
+	<body style="height: 100%">
+	<div  style="height: 100%">
+		<div class="grid">
+			<div class="col_12" style="margin-top:100px;">	
+				<h1 class="center">
+					<p><i class="icon-edit"></i></p>
+					Добро пожаловать на DISC тест
+				</h1>
+				<h4 style="color:#999;margin-bottom:40px;" class="center">Этот тест позволяет получить информацию о вашем темпераменте. Выбирете один из ответов "наиболее" и "наименее".</h4>
+				<div class="center"><a href="#mainDiv" class="btn">Пройти тест</a></div>
+			</div>	
+		</div>
+	</div>
+	<div id="mainDiv" style="height: 100%">
+		<!-- ============================= First block ============================= -->
+
+		<div class="grid" id="form1">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 1</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Экспресивный</td>
+								<td><input type="radio" name="11" value="1" class="majI"></td>
+								<td><input type="radio" name="12" value="1" class="minI"></td>
+							<tr>
+								<td>Покладистый</td>
+								<td><input type="radio" name="11" value="1" class="majC"></td>
+								<td><input type="radio" name="12" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Волевой</td>
+								<td><input type="radio" name="11" value="1" class="majD"></td>
+								<td><input type="radio" name="12" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Осторожный</td>
+								<td><input type="radio" name="11" value="1" class="majS"></td>
+								<td><input type="radio" name="12" value="1" class="minS"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Пылкий</td>
+								<td><input type="radio" name="13" value="1" class="majD"></td>
+								<td><input type="radio" name="14" value="1" class="minD"></td>
+							<tr>
+								<td>Разговорчивый</td>
+								<td><input type="radio" name="13" value="1" class="majI"></td>
+								<td><input type="radio" name="14" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Добродушный</td>
+								<td><input type="radio" name="13" value="1" class="majS"></td>
+								<td><input type="radio" name="14" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Сдержанный</td>
+								<td><input type="radio" name="13" value="1" class="majC"></td>
+								<td><input type="radio" name="14" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Любитель приключений</td>
+								<td><input type="radio" name="15" value="1" class="majI"></td>
+								<td><input type="radio" name="16" value="1" class="minI"></td>
+							<tr>
+								<td>Энтузиаст</td>
+								<td><input type="radio" name="15" value="1" class="majC"></td>
+								<td><input type="radio" name="16" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Исполнитель инструкций</td>
+								<td><input type="radio" name="15" value="1" class="majD"></td>
+								<td><input type="radio" name="16" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Верный</td>
+								<td><input type="radio" name="15" value="1" class="majS"></td>
+								<td><input type="radio" name="16" value="1" class="minS"></td>
+							</tr>
+						</table>
+					</div>
+				<div class="col_5"></div> <!-- Padding -->
+				<!-- Buttons-->
+					<div class="col_1">
+						<button  id="next1">Next</button>
+					</div>	
+			</div>
+			
+		</div>
+
+		<!-- ============================= Second block ============================= -->
+
+		<div class="grid" id="form2" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 2</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Настойчивый</td>
+								<td><input type="radio" name="21" value="1" class="majD"></td>
+								<td><input type="radio" name="22" value="1" class="minD"></td>
+							<tr>
+								<td>Осторожный</td>
+								<td><input type="radio" name="21" value="1" class="majC"></td>
+								<td><input type="radio" name="22" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Эмоциональный</td>
+								<td><input type="radio" name="21" value="1" class="majI"></td>
+								<td><input type="radio" name="22" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Удовлетворенный</td>
+								<td><input type="radio" name="21" value="1" class="majS"></td>
+								<td><input type="radio" name="22" value="1" class="minS"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Довольный</td>
+								<td><input type="radio" name="23" value="1" class="majS"></td>
+								<td><input type="radio" name="24" value="1" class="minS"></td>
+							<tr>
+								<td>Нетерпеливый</td>
+								<td><input type="radio" name="23" value="1" class="majD"></td>
+								<td><input type="radio" name="24" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Убедительный</td>
+								<td><input type="radio" name="23" value="1" class="majI"></td>
+								<td><input type="radio" name="24" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Безропотный</td>
+								<td><input type="radio" name="23" value="1" class="majC"></td>
+								<td><input type="radio" name="24" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Смиренный</td>
+								<td><input type="radio" name="25" value="1" class="majC"></td>
+								<td><input type="radio" name="26" value="1" class="minC"></td>
+							<tr>
+								<td>Умеющий слушать</td>
+								<td><input type="radio" name="25" value="1" class="majS"></td>
+								<td><input type="radio" name="26" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Душа компании</td>
+								<td><input type="radio" name="25" value="1" class="majI"></td>
+								<td><input type="radio" name="26" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Волевой</td>
+								<td><input type="radio" name="25" value="1" class="majD"></td>
+								<td><input type="radio" name="26" value="1" class="minD"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev2">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next2">Next</button>
+						</div>	
+			</div>
+		</div>
+
+		<!-- ============================= Third block ============================= -->
+
+		<div class="grid" id="form3" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 3</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Правильный</td>
+								<td><input type="radio" name="31" value="1" class="majC"></td>
+								<td><input type="radio" name="32" value="1" class="minC"></td>
+							<tr>
+								<td>Первопроходец</td>
+								<td><input type="radio" name="31" value="1" class="majD"></td>
+								<td><input type="radio" name="32" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Спокойный</td>
+								<td><input type="radio" name="31" value="1" class="majS"></td>
+								<td><input type="radio" name="32" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Влиятельный</td>
+								<td><input type="radio" name="31" value="1" class="majI"></td>
+								<td><input type="radio" name="32" value="1" class="minI"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Почтительный</td>
+								<td><input type="radio" name="33" value="1" class="majC"></td>
+								<td><input type="radio" name="34" value="1" class="minC"></td>
+							<tr>
+								<td>Контактный</td>
+								<td><input type="radio" name="33" value="1" class="majI"></td>
+								<td><input type="radio" name="34" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Агрессивный</td>
+								<td><input type="radio" name="33" value="1" class="majD"></td>
+								<td><input type="radio" name="34" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Мягкий</td>
+								<td><input type="radio" name="33" value="1" class="majS"></td>
+								<td><input type="radio" name="34" value="1" class="minS"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Весельчак</td>
+								<td><input type="radio" name="35" value="1" class="majI"></td>
+								<td><input type="radio" name="36" value="1" class="minI"></td>
+							<tr>
+								<td>Покорный</td>
+								<td><input type="radio" name="35" value="1" class="majS"></td>
+								<td><input type="radio" name="36" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Тактичный</td>
+								<td><input type="radio" name="35" value="1" class="majC"></td>
+								<td><input type="radio" name="36" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Соперничающий</td>
+								<td><input type="radio" name="35" value="1" class="majD"></td>
+								<td><input type="radio" name="36" value="1" class="minD"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev3">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next3">Next</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Fourth block ============================= -->
+
+		<div class="grid" id="form4" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 4</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Точный</td>
+								<td><input type="radio" name="41" value="1" class="majC"></td>
+								<td><input type="radio" name="42" value="1" class="minC"></td>
+							<tr>
+								<td>Доминирующий</td>
+								<td><input type="radio" name="41" value="1" class="majD"></td>
+								<td><input type="radio" name="42" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Охотный</td>
+								<td><input type="radio" name="41" value="1" class="majS"></td>
+								<td><input type="radio" name="42" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Притягательный</td>
+								<td><input type="radio" name="41" value="1" class="majI"></td>
+								<td><input type="radio" name="42" value="1" class="minI"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Уравновешенный</td>
+								<td><input type="radio" name="43" value="1" class="majI"></td>
+								<td><input type="radio" name="44" value="1" class="minI"></td>
+							<tr>
+								<td>Уступчивый</td>
+								<td><input type="radio" name="43" value="1" class="majC"></td>
+								<td><input type="radio" name="44" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Идущий на риск</td>
+								<td><input type="radio" name="43" value="1" class="majD"></td>
+								<td><input type="radio" name="44" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Услужливый</td>
+								<td><input type="radio" name="43" value="1" class="majS"></td>
+								<td><input type="radio" name="44" value="1" class="minS"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Осмотрительный</td>
+								<td><input type="radio" name="45" value="1" class="majC"></td>
+								<td><input type="radio" name="46" value="1" class="minC"></td>
+							<tr>
+								<td>Добрососедский</td>
+								<td><input type="radio" name="45" value="1" class="majS"></td>
+								<td><input type="radio" name="46" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Энергичный</td>
+								<td><input type="radio" name="45" value="1" class="majD"></td>
+								<td><input type="radio" name="46" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Убедительный</td>
+								<td><input type="radio" name="45" value="1" class="majI"></td>
+								<td><input type="radio" name="46" value="1" class="minI"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev4">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next4">Next</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Fivth block ============================= -->
+
+		<div class="grid" id="form5" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 5</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Уравновешеный</td>
+								<td><input type="radio" name="51" value="1" class="majS"></td>
+								<td><input type="radio" name="52" value="1" class="minS"></td>
+							<tr>
+								<td>Мотивирующий</td>
+								<td><input type="radio" name="51" value="1" class="majI"></td>
+								<td><input type="radio" name="52" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Щепетильный</td>
+								<td><input type="radio" name="51" value="1" class="majC"></td>
+								<td><input type="radio" name="52" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Решительный</td>
+								<td><input type="radio" name="51" value="1" class="majD"></td>
+								<td><input type="radio" name="52" value="1" class="minD"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Уверенный</td>
+								<td><input type="radio" name="53" value="1" class="majI"></td>
+								<td><input type="radio" name="54" value="1" class="minI"></td>
+							<tr>
+								<td>Готовый к сотрудничеству</td>
+								<td><input type="radio" name="53" value="1" class="majC"></td>
+								<td><input type="radio" name="54" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Аргументирующий</td>
+								<td><input type="radio" name="53" value="1" class="majD"></td>
+								<td><input type="radio" name="54" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Беззаботный</td>
+								<td><input type="radio" name="53" value="1" class="majS"></td>
+								<td><input type="radio" name="54" value="1" class="minS"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Сдержанный</td>
+								<td><input type="radio" name="55" value="1" class="majS"></td>
+								<td><input type="radio" name="56" value="1" class="minS"></td>
+							<tr>
+								<td>Прямой</td>
+								<td><input type="radio" name="55" value="1" class="majD"></td>
+								<td><input type="radio" name="56" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Строгий</td>
+								<td><input type="radio" name="55" value="1" class="majC"></td>
+								<td><input type="radio" name="56" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Красноречивый</td>
+								<td><input type="radio" name="55" value="1" class="majI"></td>
+								<td><input type="radio" name="56" value="1" class="minI"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev5">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next5">Next</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Sixth block ============================= -->
+
+		<div class="grid" id="form6" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 6</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Застенчивый</td>
+								<td><input type="radio" name="61" value="1" class="majC"></td>
+								<td><input type="radio" name="62" value="1" class="minC"></td>
+							<tr>
+								<td>Требовательный</td>
+								<td><input type="radio" name="61" value="1" class="majD"></td>
+								<td><input type="radio" name="62" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Терпеливый</td>
+								<td><input type="radio" name="61" value="1" class="majS"></td>
+								<td><input type="radio" name="62" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Очаровательный</td>
+								<td><input type="radio" name="61" value="1" class="majI"></td>
+								<td><input type="radio" name="62" value="1" class="minI"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Неугомонный</td>
+								<td><input type="radio" name="63" value="1" class="majD"></td>
+								<td><input type="radio" name="64" value="1" class="minD"></td>
+							<tr>
+								<td>Дисциплинированный</td>
+								<td><input type="radio" name="63" value="1" class="majC"></td>
+								<td><input type="radio" name="64" value="1" class="minC"></td>
+							</tr>
+							<tr>
+								<td>Вдохновляющий</td>
+								<td><input type="radio" name="63" value="1" class="majI"></td>
+								<td><input type="radio" name="64" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Внимательный</td>
+								<td><input type="radio" name="63" value="1" class="majS"></td>
+								<td><input type="radio" name="64" value="1" class="minS"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Обязательный</td>
+								<td><input type="radio" name="65" value="1" class="majS"></td>
+								<td><input type="radio" name="66" value="1" class="minS"></td>
+							<tr>
+								<td>Оживленный</td>
+								<td><input type="radio" name="65" value="1" class="majI"></td>
+								<td><input type="radio" name="66" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Решительный</td>
+								<td><input type="radio" name="65" value="1" class="majD"></td>
+								<td><input type="radio" name="66" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Точный</td>
+								<td><input type="radio" name="65" value="1" class="majC"></td>
+								<td><input type="radio" name="66" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev6">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next6">Next</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Sventh block ============================= -->
+
+		<div class="grid" id="form7" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 7</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Добросовестный</td>
+								<td><input type="radio" name="71" value="1" class="majC"></td>
+								<td><input type="radio" name="72" value="1" class="minC"></td>
+							<tr>
+								<td>Компанейский</td>
+								<td><input type="radio" name="71" value="1" class="majI"></td>
+								<td><input type="radio" name="72" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Добрый</td>
+								<td><input type="radio" name="71" value="1" class="majS"></td>
+								<td><input type="radio" name="72" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Уверенный в себе</td>
+								<td><input type="radio" name="71" value="1" class="majD"></td>
+								<td><input type="radio" name="72" value="1" class="minD"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Дипломатичный</td>
+								<td><input type="radio" name="73" value="1" class="majC"></td>
+								<td><input type="radio" name="74" value="1" class="minC"></td>
+							<tr>
+								<td>Отважный</td>
+								<td><input type="radio" name="73" value="1" class="majD"></td>
+								<td><input type="radio" name="74" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Сочувствующий</td>
+								<td><input type="radio" name="73" value="1" class="majS"></td>
+								<td><input type="radio" name="74" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Оптимистичный</td>
+								<td><input type="radio" name="73" value="1" class="majI"></td>
+								<td><input type="radio" name="74" value="1" class="minI"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Настойчивый</td>
+								<td><input type="radio" name="75" value="1" class="majD"></td>
+								<td><input type="radio" name="76" value="1" class="minD"></td>
+							<tr>
+								<td>Общительный</td>
+								<td><input type="radio" name="75" value="1" class="majI"></td>
+								<td><input type="radio" name="76" value="1" class="minI"></td>
+							</tr>
+							<tr>
+								<td>Постоянный</td>
+								<td><input type="radio" name="75" value="1" class="majS"></td>
+								<td><input type="radio" name="76" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Организованный</td>
+								<td><input type="radio" name="75" value="1" class="majC"></td>
+								<td><input type="radio" name="76" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev7">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="next7">Next</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Eighth block ============================= -->
+
+		<div class="grid" id="form8" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Блок 8</h2>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Соглашающийся</td>
+								<td><input type="radio" name="81" value="1" class="majC"></td>
+								<td><input type="radio" name="82" value="1" class="minC"></td>
+							<tr>
+								<td>Владеющий собой</td>
+								<td><input type="radio" name="81" value="1" class="majS"></td>
+								<td><input type="radio" name="82" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Шутливый</td>
+								<td><input type="radio" name="81" value="1" class="majD"></td>
+								<td><input type="radio" name="82" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Настойчивый</td>
+								<td><input type="radio" name="81" value="1" class="majI"></td>
+								<td><input type="radio" name="82" value="1" class="minI"></td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Обаятельный</td>
+								<td><input type="radio" name="83" value="1" class="majI"></td>
+								<td><input type="radio" name="84" value="1" class="minI"></td>
+							<tr>
+								<td>Позитивный</td>
+								<td><input type="radio" name="83" value="1" class="majD"></td>
+								<td><input type="radio" name="84" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Снисходительны</td>
+								<td><input type="radio" name="83" value="1" class="majS"></td>
+								<td><input type="radio" name="84" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Требовательный</td>
+								<td><input type="radio" name="83" value="1" class="majC"></td>
+								<td><input type="radio" name="84" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_4">
+						<table class="table">
+							<tr>
+								<td></td>
+								<td> Наиболее</td>
+								<td> Наимение</td>
+							</tr>
+								<td>Коммуникабельный</td>
+								<td><input type="radio" name="85" value="1" class="majI"></td>
+								<td><input type="radio" name="86" value="1" class="minI"></td>
+							<tr>
+								<td>Смелый</td>
+								<td><input type="radio" name="85" value="1" class="majD"></td>
+								<td><input type="radio" name="86" value="1" class="minD"></td>
+							</tr>
+							<tr>
+								<td>Сдержанный</td>
+								<td><input type="radio" name="85" value="1" class="majS"></td>
+								<td><input type="radio" name="86" value="1" class="minS"></td>
+							</tr>
+							<tr>
+								<td>Перфекционист</td>
+								<td><input type="radio" name="85" value="1" class="majC"></td>
+								<td><input type="radio" name="86" value="1" class="minC"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col_5"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev8">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="submitButtom">Check</button>
+						</div>	
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Check block ============================= -->
+
+		<div class="grid" id="resultDiv" style="display:none;">
+			
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+
+				<h2>Результат</h2>
+					<!-- D -->
+					<div class="col_4">
+						<input type="text" id="resultMajD">Maj D</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="resultMinD">Min D</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="totalD">Total D</input>
+					</div>
+
+					<!-- I -->
+					<div class="col_4">
+						<input type="text" id="resultMajI">Maj I</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="resultMinI">Min I</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="totalI">Total I</input>
+					</div>
+
+					<!-- S -->
+					<div class="col_4">
+						<input type="text" id="resultMajS">Maj S</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="resultMinS">Min S</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="totalS">Total S</input>
+					</div>
+
+					<!-- C -->
+					<div class="col_4">
+						<input type="text" id="resultMajC">Maj C</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="resultMinC">Min C</input>
+					</div>
+					<div class="col_4">
+						<input type="text" id="totalC">Total C</input>
+					</div>
+
+
+					<div class="col_4"></div> <!-- Padding -->
+						<!-- Buttons-->
+						<div class="col_1">
+							<button id="prev9">Prev</button>
+						</div>
+						<div class="col_1">
+							<button  id="submitButtom">Check</button>
+						</div>
+						<div class="col_2">
+							
+							<div class="center"><a href="#downDiv" class="btn">Все буквы</a></div>
+						</div>		
+			</div>
+		</div> <!-- end-->
+
+		<!-- ============================= Leter text ============================= -->
+
+		<div class="grid" id="textD" style="display:none;"> <!-- D start-->
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+				<h4>ДОМИНИРОВАНИЕ "D"</h4> 
+				<p><strong>Другие характеристики:</strong> Управляющий</p><p><strong>К чему стремится:</strong> Преодолевая препятствия и оппозицию, контролировать окружающий мир с целью достижения желаемых результатов.</p><p><strong>Что мотивирует:</strong> сложная задача, испытание.</p><p><strong>Главная цель:</strong> преодолеть</p><p> Люди этой группы – антрепренеры, мобилизирующие силы и ресурсы при столкновении с трудностями. В большинстве случаев Вы честны, позитивно настроены и откровенны – иногда вплоть до резкости. Вам нравится быть в центре внимания и стоять во главе.</p><p>Вы изо всех сил боретесь за предложенный Вами вариант, но кратковременное поражение не заставляет Вас затаить на кого-либо обиду. Вы ненавидите обыденность и склонны к смене мест работы, особенно в начале карьеры, до тех пор, пока не найдете испытания, достойного Вас.</p><p>Благотворная среда для людей этого склада - конкуренция, нелегкие задачи, огромный объем работы, давление (затруднительные обстоятельства) и потенциал для личных достижений. Вас не удовлетворяет статус-кво.</p><p>Вы истинный индивидуалист, Вы абсолютно самодостаточны. Вы весьма требовательны к себе и окружающим.</p>
+			</div>
+		</div> <!-- D end-->
+
+		<div class="grid" id="textI" style="display:none;"> <!-- I start-->
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+				<h4>ВЛИЯНИЕ "I"</h4> 
+				<p><strong>Другие характеристики:</strong> экспрессивный, убеждающий.</p><p><strong>К чему стремится:</strong> с помощью мотивации и расстановки сил создать атмосферу, в которой люди могут выполнить поставленную задачу.</p><p><strong>Что мотивирует:</strong> сложная задача, испытание.</p><p><strong>Главная цель:</strong>  убедить.</p><p>Благотворная среда для людей этого склада – социальные контакты, общение с глазу на глаз, а также свобода от контроля и деталей. Они дружелюбны, коммуникабельны, убедительны и уверены в себе.</p><p>Главный интерес для Вас представляют другие люди. Вы уравновешены и легко сходитесь с новыми людьми. В Вашем присутствии люди ведут себя естественно, для Вас типичен широкий круг знакомых. Ваш прирожденный оптимизм и умение общаться с людьми помогают Вам в общении с большинством людей, включая Ваших конкурентов.</p><p>Представители этой группы как правило следуют моде, приходят в организацию ради престижа и получения личного признания.</p>
+			</div>
+		</div> <!-- I end-->
+
+		<div class="grid" id="textS" style="display:none;"> <!-- S start-->
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+				<h4>ПОСТОЯНСТВО "S"</h4> 
+				<p><strong>Другие характеристики:</strong> дружелюбный, поддерживающий.</p><p><strong>К чему стремится:</strong> поддерживать атмосферу ради выполнения конкретных заданий.</p><p><strong>Что мотивирует:</strong> признательность, похвала.</p><p><strong>Главная цель:</strong> поддержать.</p><p>Благотворная среда для людей этого склада – спокойная, дружелюбная атмосфера, в которой отсутствует сильное давление – та, в которой им гарантирована опека, ограниченное пространство, привычный предсказуемый порядок работы, а также награда за достигнутые результаты.</p><p>Вы, как правило, дружелюбны, добродушно-веселы, добросердечны, любите свой дом и находитесь в прекрасных отношениях с соседями. С другой стороны, Вы можете быть сдержанным или скрытным. Вы скрываете свои чувства и порой таите обиду.</p><p>В большинстве случаев люди этой группы отличаются уравновешенностью, спокойствием, эмоциональной зрелостью и ненавязчивостью. В общем, Вас устраивает статус-кво; Вы проявляете снисходительность к себе и другим.</p><p>Люди этого склада не приветствуют изменений. Приступив к работе, Вы продолжаете выполнять ее с постоянством и терпением; Вы не любите дедлайны. Обычно в Вас проявляется собственник, Вы сильно привязываетесь к своим вещам, своей семье, своему отделу, своей должности.</p>
+			</div>
+		</div> <!-- S end-->
+
+		<div class="grid" id="textC" style="display:none;"> <!-- C start-->
+			<div class="col_12" style="border:1px solid #bbb;padding:10px;">
+				<h4>ИСПОЛНИТЕЛЬНОСТЬ "C"</h4> 
+				<p><strong>Другие характеристики:</strong> добросовестный, предусмотрительный, аналитичный.</p><p><strong>К чему стремится:</strong> систематизировать окружающий мир с целью производить высококачественную продукцию и предоставлять высококачественные услуги.</p><p><strong>Что мотивирует:</strong> опека/безопасность.</p><p><strong>Главная цель:</strong> избегать неприятностей.</p><p>ЛБлаготворная среда для людей этого склада - порядок, использование заранее обусловленных методов, следование традициям, отсутствие конфликтов, возможность регулярно и тщательно планировать и отсутствие неожиданных изменений.</p><p>Люди этой группы точны и уделяют внимание деталям. Вы предпочитаете приспосабливаться к ситуации во избежание конфликта и антагонизма (враждебности). Ваша потребность в самосохранении заставляет Вас документировать каждый Ваш шаг. Вы также стараетесь сделать все то, чего требуют от Вас окружающие.</p><p>Вы осторожны от природы и предпочитаете выждать и сначала понять, куда дует ветер. Но если Вы на что-то решились, то можете приступить к выполнению задуманного достаточно решительно.</p>
+			</div>
+		</div> <!-- C end-->
+	</div>
+
+	<!-- ===================================== 	DOWN DIV FOOTER ===================================== -->
+
+	<div id="downDiv" style="height: 100%">
+		<div class="grid">
+			<div class="col_12">
+				<div class="tab-content">
+				<ul class="tabs left">
+					<li><a href="#tabr1">D</a></li>
+					<li><a href="#tabr2">I</a></li>
+					<li><a href="#tabr3">S</a></li>
+					<li><a href="#tabr4">C</a></li>
+				</ul>
+					<div id="tabr1" class="tab-content"><h4>ДОМИНИРОВАНИЕ "D"</h4> 
+						<p><strong>Другие характеристики:</strong> Управляющий</p><p><strong>К чему стремится:</strong> Преодолевая препятствия и оппозицию, контролировать окружающий мир с целью достижения желаемых результатов.</p><p><strong>Что мотивирует:</strong> сложная задача, испытание.</p><p><strong>Главная цель:</strong> преодолеть</p><p> Люди этой группы – антрепренеры, мобилизирующие силы и ресурсы при столкновении с трудностями. В большинстве случаев Вы честны, позитивно настроены и откровенны – иногда вплоть до резкости. Вам нравится быть в центре внимания и стоять во главе.</p><p>Вы изо всех сил боретесь за предложенный Вами вариант, но кратковременное поражение не заставляет Вас затаить на кого-либо обиду. Вы ненавидите обыденность и склонны к смене мест работы, особенно в начале карьеры, до тех пор, пока не найдете испытания, достойного Вас.</p><p>Благотворная среда для людей этого склада - конкуренция, нелегкие задачи, огромный объем работы, давление (затруднительные обстоятельства) и потенциал для личных достижений. Вас не удовлетворяет статус-кво.</p><p>Вы истинный индивидуалист, Вы абсолютно самодостаточны. Вы весьма требовательны к себе и окружающим.</p>
+					</div>
+					<div id="tabr2" class="tab-content"><h4>ВЛИЯНИЕ "I"</h4> 
+						<p><strong>Другие характеристики:</strong> экспрессивный, убеждающий.</p><p><strong>К чему стремится:</strong> с помощью мотивации и расстановки сил создать атмосферу, в которой люди могут выполнить поставленную задачу.</p><p><strong>Что мотивирует:</strong> сложная задача, испытание.</p><p><strong>Главная цель:</strong>  убедить.</p><p>Благотворная среда для людей этого склада – социальные контакты, общение с глазу на глаз, а также свобода от контроля и деталей. Они дружелюбны, коммуникабельны, убедительны и уверены в себе.</p><p>Главный интерес для Вас представляют другие люди. Вы уравновешены и легко сходитесь с новыми людьми. В Вашем присутствии люди ведут себя естественно, для Вас типичен широкий круг знакомых. Ваш прирожденный оптимизм и умение общаться с людьми помогают Вам в общении с большинством людей, включая Ваших конкурентов.</p><p>Представители этой группы как правило следуют моде, приходят в организацию ради престижа и получения личного признания.</p>
+					</div>
+					<div id="tabr3" class="tab-content"><h4>ПОСТОЯНСТВО "S"</h4> 
+						<p><strong>Другие характеристики:</strong> дружелюбный, поддерживающий.</p><p><strong>К чему стремится:</strong> поддерживать атмосферу ради выполнения конкретных заданий.</p><p><strong>Что мотивирует:</strong> признательность, похвала.</p><p><strong>Главная цель:</strong> поддержать.</p><p>Благотворная среда для людей этого склада – спокойная, дружелюбная атмосфера, в которой отсутствует сильное давление – та, в которой им гарантирована опека, ограниченное пространство, привычный предсказуемый порядок работы, а также награда за достигнутые результаты.</p><p>Вы, как правило, дружелюбны, добродушно-веселы, добросердечны, любите свой дом и находитесь в прекрасных отношениях с соседями. С другой стороны, Вы можете быть сдержанным или скрытным. Вы скрываете свои чувства и порой таите обиду.</p><p>В большинстве случаев люди этой группы отличаются уравновешенностью, спокойствием, эмоциональной зрелостью и ненавязчивостью. В общем, Вас устраивает статус-кво; Вы проявляете снисходительность к себе и другим.</p><p>Люди этого склада не приветствуют изменений. Приступив к работе, Вы продолжаете выполнять ее с постоянством и терпением; Вы не любите дедлайны. Обычно в Вас проявляется собственник, Вы сильно привязываетесь к своим вещам, своей семье, своему отделу, своей должности.</p>
+					</div>
+					<div id="tabr4" class="tab-content"><h4>ИСПОЛНИТЕЛЬНОСТЬ "C"</h4> 
+						<p><strong>Другие характеристики:</strong> добросовестный, предусмотрительный, аналитичный.</p><p><strong>К чему стремится:</strong> систематизировать окружающий мир с целью производить высококачественную продукцию и предоставлять высококачественные услуги.</p><p><strong>Что мотивирует:</strong> опека/безопасность.</p><p><strong>Главная цель:</strong> избегать неприятностей.</p><p>ЛБлаготворная среда для людей этого склада - порядок, использование заранее обусловленных методов, следование традициям, отсутствие конфликтов, возможность регулярно и тщательно планировать и отсутствие неожиданных изменений.</p><p>Люди этой группы точны и уделяют внимание деталям. Вы предпочитаете приспосабливаться к ситуации во избежание конфликта и антагонизма (враждебности). Ваша потребность в самосохранении заставляет Вас документировать каждый Ваш шаг. Вы также стараетесь сделать все то, чего требуют от Вас окружающие.</p><p>Вы осторожны от природы и предпочитаете выждать и сначала понять, куда дует ветер. Но если Вы на что-то решились, то можете приступить к выполнению задуманного достаточно решительно.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!-- ===================================== START FOOTER ===================================== -->
+		<div class="clear"></div>
+			<div id="footer">
+			&copy; Copyright 2011–2014 All Rights Reserved. This website was built <a href=https://www.facebook.com/VilkoAlexander>Alexander Vilko</a>
+			</div>		
+	</body>
+</html>
